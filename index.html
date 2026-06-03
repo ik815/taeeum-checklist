@@ -225,8 +225,32 @@
       border-top: 1px solid #eee;
     }
 
+    /* 섹션 구분 사진 */
+    .section-photo {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto 40px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    }
+    .section-photo img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+    }
+    .section-photo .photo-caption {
+      background: rgba(45,90,61,0.85);
+      color: white;
+      font-size: 12px;
+      padding: 6px 14px;
+      text-align: right;
+    }
+
     @media (max-width: 520px) {
       .food-grid { grid-template-columns: 1fr; }
+      .section-photo img { height: 180px; }
     }
   </style>
 </head>
@@ -250,6 +274,12 @@
     <p>오늘은 한의원에 가지 않아도 스스로 확인할 수 있는 <strong>태음인 자가진단 체크리스트 20가지</strong>를 정리했습니다. 체크 결과에 따라 맞는 한약과 피해야 할 음식까지 함께 알려드릴게요.</p>
   </div>
 
+  <!-- 사진1: 한약재 유리병 -->
+  <div class="section-photo">
+    <img src="images/photo1.jpg" alt="한약재 보관 유리병들" loading="lazy" />
+    <div class="photo-caption">Photo by Pexels · Free to use</div>
+  </div>
+
   <!-- 태음인이란 -->
   <section>
     <h2>태음인이란? (30초 요약)</h2>
@@ -258,6 +288,12 @@
       <p>태음인의 핵심 키워드는 <strong>"저장과 축적"</strong>입니다. 몸 안에 에너지와 물질을 쌓아두는 경향이 강해서, 체격이 크고 살이 잘 찌는 반면 한번 건강이 무너지면 회복이 더딘 편이에요.</p>
     </div>
   </section>
+
+  <!-- 사진2: 한약재 나무그릇 -->
+  <div class="section-photo">
+    <img src="images/photo2.jpg" alt="전통 한약재 나무그릇" loading="lazy" />
+    <div class="photo-caption">Photo by Pexels · Free to use</div>
+  </div>
 
   <!-- 체크리스트 -->
   <section>
@@ -301,6 +337,12 @@
     </div>
   </section>
 
+  <!-- 사진3: 한약재 + 부항컵 -->
+  <div class="section-photo">
+    <img src="images/photo3.jpg" alt="한약재와 부항컵" loading="lazy" />
+    <div class="photo-caption">Photo by Pexels · Free to use</div>
+  </div>
+
   <!-- 결과 -->
   <section>
     <h2>결과 확인</h2>
@@ -330,6 +372,12 @@
     </div>
   </section>
 
+  <!-- 사진4: 한국 전통 상차림 -->
+  <div class="section-photo">
+    <img src="images/photo4.jpg" alt="한국 전통 상차림" loading="lazy" />
+    <div class="photo-caption">Photo by Pexels · Free to use</div>
+  </div>
+
   <!-- 한약 -->
   <section>
     <h2>태음인에게 맞는 한약</h2>
@@ -355,6 +403,12 @@
       <span class="herb-tag">도라지(길경) — 가래 제거</span>
     </div>
   </section>
+
+  <!-- 사진5: 한방차 -->
+  <div class="section-photo">
+    <img src="images/photo5.jpg" alt="한방차 탕약" loading="lazy" />
+    <div class="photo-caption">Photo by Pexels · Free to use</div>
+  </div>
 
   <!-- 음식 -->
   <section>

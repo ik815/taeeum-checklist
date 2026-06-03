@@ -1,0 +1,483 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - navigation [ref=e6]:
+      - link [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img [ref=e9]
+      - search [ref=e13]:
+        - generic [ref=e14]:
+          - button "Photos" [ref=e16] [cursor=pointer]:
+            - generic [ref=e17]:
+              - img [ref=e18]
+              - generic [ref=e21]: Photos
+              - img [ref=e22]
+          - searchbox "Search for free photos" [ref=e24]: korean traditional medicine
+          - button [ref=e26] [cursor=pointer]:
+            - img [ref=e28]
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - link "Explore" [ref=e32] [cursor=pointer]:
+            - /url: /discover/
+            - generic [ref=e33]: Explore
+          - img [ref=e34]
+        - link "License" [ref=e36] [cursor=pointer]:
+          - /url: /license/
+          - generic [ref=e37]: License
+        - button [ref=e39] [cursor=pointer]:
+          - img [ref=e40]
+        - button "Join" [ref=e42] [cursor=pointer]:
+          - generic [ref=e44]: Join
+    - main [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e50]:
+          - paragraph [ref=e52] [cursor=pointer]: Any
+          - generic [ref=e53] [cursor=pointer]:
+            - img [ref=e55]
+            - paragraph [ref=e57]: Horizontal
+          - generic [ref=e58] [cursor=pointer]:
+            - img [ref=e60]
+            - paragraph [ref=e62]: Vertical
+          - generic [ref=e63] [cursor=pointer]:
+            - img [ref=e65]
+            - paragraph [ref=e67]: Square
+        - generic [ref=e71]:
+          - paragraph [ref=e73] [cursor=pointer]: Any
+          - paragraph [ref=e75] [cursor=pointer]: "0"
+          - generic [ref=e76] [cursor=pointer]:
+            - img [ref=e78]
+            - paragraph [ref=e80]: "1"
+          - generic [ref=e81] [cursor=pointer]:
+            - img [ref=e83]
+            - paragraph [ref=e85]: "2"
+          - generic [ref=e86] [cursor=pointer]:
+            - img [ref=e88]
+            - paragraph [ref=e90]: 3+
+        - generic [ref=e94]:
+          - paragraph [ref=e96] [cursor=pointer]: Any
+          - generic [ref=e97] [cursor=pointer]:
+            - img [ref=e99]
+            - paragraph [ref=e101]: Baby
+          - generic [ref=e102] [cursor=pointer]:
+            - img [ref=e104]
+            - paragraph [ref=e106]: Child
+          - generic [ref=e107] [cursor=pointer]:
+            - img [ref=e109]
+            - paragraph [ref=e111]: Teenager
+          - generic [ref=e112] [cursor=pointer]:
+            - img [ref=e114]
+            - paragraph [ref=e116]: Adult
+          - generic [ref=e117] [cursor=pointer]:
+            - img [ref=e119]
+            - paragraph [ref=e121]: Senior adult
+        - generic [ref=e124]:
+          - generic [ref=e125]:
+            - slider [ref=e128] [cursor=pointer]
+            - slider [ref=e129] [cursor=pointer]
+          - generic [ref=e130]:
+            - generic [ref=e131]:
+              - paragraph [ref=e132]: Minimum
+              - paragraph [ref=e133]: 1,080px
+            - generic [ref=e134]:
+              - paragraph [ref=e135]: Maximum
+              - paragraph [ref=e136]: 20,000px+
+        - generic [ref=e139]:
+          - generic [ref=e140]:
+            - slider [ref=e143] [cursor=pointer]
+            - slider [ref=e144] [cursor=pointer]
+          - generic [ref=e145]:
+            - generic [ref=e146]:
+              - paragraph [ref=e147]: Minimum
+              - paragraph [ref=e148]: 1,080px
+            - generic [ref=e149]:
+              - paragraph [ref=e150]: Maximum
+              - paragraph [ref=e151]: 20,000px+
+        - generic [ref=e155]:
+          - button [ref=e156] [cursor=pointer]:
+            - generic [ref=e157]:
+              - textbox [ref=e162]:
+                - /placeholder: Enter hex code
+              - img [ref=e163]
+          - button [ref=e165] [cursor=pointer]:
+            - generic [ref=e166]:
+              - img [ref=e167]
+              - textbox [ref=e171]: "#000000"
+        - generic [ref=e175]:
+          - paragraph [ref=e177] [cursor=pointer]: Any
+          - generic [ref=e178] [cursor=pointer]:
+            - img [ref=e180]
+            - paragraph [ref=e182]: Last 24 hours
+          - generic [ref=e183] [cursor=pointer]:
+            - img [ref=e185]
+            - paragraph [ref=e187]: Last week
+          - generic [ref=e188] [cursor=pointer]:
+            - img [ref=e190]
+            - paragraph [ref=e192]: Last month
+          - generic [ref=e193] [cursor=pointer]:
+            - img [ref=e195]
+            - paragraph [ref=e197]: Last year
+        - main "main-content" [ref=e198]:
+          - generic [ref=e199]:
+            - generic [ref=e200]:
+              - heading "Choose your language:" [level=5] [ref=e201]
+              - generic [ref=e203]:
+                - link "English English" [ref=e205] [cursor=pointer]:
+                  - /url: /search/korean%20traditional%20medicine/
+                  - generic [ref=e206]:
+                    - img "English" [ref=e207]
+                    - generic [ref=e208]: English
+                - link "한국어 한국어" [ref=e209] [cursor=pointer]:
+                  - /url: /ko-kr/search/korean%20traditional%20medicine/
+                  - generic [ref=e210]:
+                    - img "한국어" [ref=e211]
+                    - generic [ref=e212]: 한국어
+                - button [ref=e213] [cursor=pointer]:
+                  - img [ref=e215]
+            - heading "Free Korean Traditional Medicine Photos" [level=1] [ref=e220]
+            - generic [ref=e223]:
+              - generic:
+                - img
+              - link "Photos 10K" [ref=e225] [cursor=pointer]:
+                - /url: /search/korean%20traditional%20medicine/
+                - text: Photos
+                - generic [ref=e226]: 10K
+              - link "Videos 10K" [ref=e227] [cursor=pointer]:
+                - /url: /search/videos/korean%20traditional%20medicine/
+                - text: Videos
+                - generic [ref=e228]: 10K
+              - link "Users 923" [ref=e229] [cursor=pointer]:
+                - /url: /search/users/korean%20traditional%20medicine/
+                - text: Users
+                - generic [ref=e230]: "923"
+              - generic:
+                - img
+            - button "Filters" [ref=e234] [cursor=pointer]:
+              - generic [ref=e240]: Filters
+            - generic [ref=e241]:
+              - generic [ref=e243]:
+                - generic [ref=e244]:
+                  - article [ref=e247]:
+                    - link "Free Glass jars with dried herbs and roots on a shelf in a traditional Korean pharmacy. Stock Photo" [ref=e248] [cursor=pointer]:
+                      - /url: /photo/bowls-on-table-in-store-15376790/
+                      - img "Free Glass jars with dried herbs and roots on a shelf in a traditional Korean pharmacy. Stock Photo" [ref=e249]
+                  - article [ref=e254]:
+                    - link "Free A collection of assorted traditional Chinese herbs and spices in jars and bowls. Stock Photo" [ref=e255] [cursor=pointer]:
+                      - /url: /photo/close-up-photo-of-traditional-chinese-medicine-12809571/
+                      - img "Free A collection of assorted traditional Chinese herbs and spices in jars and bowls. Stock Photo" [ref=e256]
+                  - article [ref=e261]:
+                    - link "Free Close-up of herbal ingredients and glass jars used in traditional Chinese medicine therapy. Stock Photo" [ref=e262] [cursor=pointer]:
+                      - /url: /photo/close-up-photo-of-alternative-medicines-12809523/
+                      - img "Free Close-up of herbal ingredients and glass jars used in traditional Chinese medicine therapy. Stock Photo" [ref=e263]
+                  - article [ref=e268]:
+                    - link "Free Beautifully arranged Korean first birthday table with traditional foods and decorations. Stock Photo" [ref=e269] [cursor=pointer]:
+                      - /url: /photo/table-setting-for-korean-first-birthday-23355702/
+                      - img "Free Beautifully arranged Korean first birthday table with traditional foods and decorations. Stock Photo" [ref=e270]
+                  - link [ref=e274] [cursor=pointer]:
+                    - /url: /collections/medicine-f60heza/
+                    - article [ref=e275]:
+                      - list [ref=e277]:
+                        - listitem [ref=e278]:
+                          - img [ref=e279]
+                        - listitem [ref=e280]:
+                          - img [ref=e281]
+                        - listitem [ref=e282]:
+                          - img [ref=e283]
+                      - generic [ref=e284]:
+                        - heading "Medicine" [level=4] [ref=e285]
+                        - generic [ref=e286]:
+                          - img [ref=e287]
+                          - paragraph [ref=e289]: "29"
+                  - article [ref=e292]:
+                    - link "Free Scenic view of a traditional Korean street with Hangul signage in Seoul, showcasing cultural architecture. Stock Photo" [ref=e293] [cursor=pointer]:
+                      - /url: /photo/traditional-korean-street-with-hangul-signs-in-seoul-33676343/
+                      - img "Free Scenic view of a traditional Korean street with Hangul signage in Seoul, showcasing cultural architecture. Stock Photo" [ref=e294]
+                  - article [ref=e299]:
+                    - link "Free Flat lay of herbal supplements with ginkgo leaves on marble surface, emphasizing natural health remedies. Stock Photo" [ref=e300] [cursor=pointer]:
+                      - /url: /photo/ginkgo-leaves-and-glass-containers-with-powder-7615621/
+                      - img "Free Flat lay of herbal supplements with ginkgo leaves on marble surface, emphasizing natural health remedies. Stock Photo" [ref=e301]
+                - generic [ref=e304]:
+                  - article [ref=e307]:
+                    - link "Free A beautifully arranged Korean table with traditional mooncakes and ceramic dishware. Stock Photo" [ref=e308] [cursor=pointer]:
+                      - /url: /photo/food-on-table-at-dohl-in-korea-23355649/
+                      - img "Free A beautifully arranged Korean table with traditional mooncakes and ceramic dishware. Stock Photo" [ref=e309]
+                  - article [ref=e314]:
+                    - link "Free A beautifully arranged Korean dohl table featuring traditional foods and decorations. Stock Photo" [ref=e315] [cursor=pointer]:
+                      - /url: /photo/mochi-on-plates-on-table-23355669/
+                      - img "Free A beautifully arranged Korean dohl table featuring traditional foods and decorations. Stock Photo" [ref=e316]
+                  - article [ref=e321]:
+                    - link "Free A variety of herbal medicine jars with Chinese labels displayed in a shop. Stock Photo" [ref=e322] [cursor=pointer]:
+                      - /url: /photo/jars-in-warehouse-5656753/
+                      - img "Free A variety of herbal medicine jars with Chinese labels displayed in a shop. Stock Photo" [ref=e323]
+                  - article [ref=e328]:
+                    - link "Free Decorative Korean table setup with floral arrangements and traditional items, perfect for cultural celebrations. Stock Photo" [ref=e329] [cursor=pointer]:
+                      - /url: /photo/traditional-decoration-of-table-for-celebration-23355690/
+                      - img "Free Decorative Korean table setup with floral arrangements and traditional items, perfect for cultural celebrations. Stock Photo" [ref=e330]
+                  - article [ref=e335]:
+                    - link "Free A charming view of traditional Hanok roofs in Seoul's historic Bukchon Hanok Village. Stock Photo" [ref=e336] [cursor=pointer]:
+                      - /url: /photo/roofs-of-traditional-korean-houses-in-bukchon-hanok-village-20325767/
+                      - img "Free A charming view of traditional Hanok roofs in Seoul's historic Bukchon Hanok Village. Stock Photo" [ref=e337]
+                  - article [ref=e342]:
+                    - link "Free Traditional Korean architecture in Jeonju, South Korea on a sunny day. Stock Photo" [ref=e343] [cursor=pointer]:
+                      - /url: /photo/charming-street-scene-in-jeonju-south-korea-29381897/
+                      - img "Free Traditional Korean architecture in Jeonju, South Korea on a sunny day. Stock Photo" [ref=e344]
+                  - article [ref=e349]:
+                    - link "Free A scenic view of a traditional Korean building with a mountain backdrop under a clear blue sky. Stock Photo" [ref=e350] [cursor=pointer]:
+                      - /url: /photo/traditional-korean-architecture-with-mountain-backdrop-37436295/
+                      - img "Free A scenic view of a traditional Korean building with a mountain backdrop under a clear blue sky. Stock Photo" [ref=e351]
+                - generic [ref=e354]:
+                  - generic [ref=e356]:
+                    - generic [ref=e358]:
+                      - link "Create your own korean traditional medicine content with Canva" [ref=e359] [cursor=pointer]:
+                        - /url: https://www.canva.com/features/ai-image-generator/?prompt=High%20quality%20stock%20photo%20of%20korean%20traditional%20medicine%2C%20professional%20lighting%2C%20sharp%20focus%2C%20natural%20colors%2C%20realistic%20detail%2C%20modern%20composition%2C%20commercial%20use%20standard%2C%20editorial%20style%2C%20ultra%20HD%2C%20clean%20background&utm_source=pexels&utm_campaign=aigc_pexelscampaign&utm_medium=partner&utm_content=%20experiment%3Dsiglip_2_query_expansions%2Bcontrol
+                        - img "Create your own korean traditional medicine content with Canva" [ref=e360]
+                      - link "Create your own korean traditional medicine content with Canva" [ref=e361] [cursor=pointer]:
+                        - /url: https://www.canva.com/features/ai-image-generator/?prompt=High%20quality%20stock%20photo%20of%20korean%20traditional%20medicine%2C%20professional%20lighting%2C%20sharp%20focus%2C%20natural%20colors%2C%20realistic%20detail%2C%20modern%20composition%2C%20commercial%20use%20standard%2C%20editorial%20style%2C%20ultra%20HD%2C%20clean%20background&utm_source=pexels&utm_campaign=aigc_pexelscampaign&utm_medium=partner&utm_content=%20experiment%3Dsiglip_2_query_expansions%2Bcontrol
+                        - img "Create your own korean traditional medicine content with Canva" [ref=e362]
+                      - link "Create your own korean traditional medicine content with Canva" [ref=e363] [cursor=pointer]:
+                        - /url: https://www.canva.com/features/ai-image-generator/?prompt=High%20quality%20stock%20photo%20of%20korean%20traditional%20medicine%2C%20professional%20lighting%2C%20sharp%20focus%2C%20natural%20colors%2C%20realistic%20detail%2C%20modern%20composition%2C%20commercial%20use%20standard%2C%20editorial%20style%2C%20ultra%20HD%2C%20clean%20background&utm_source=pexels&utm_campaign=aigc_pexelscampaign&utm_medium=partner&utm_content=%20experiment%3Dsiglip_2_query_expansions%2Bcontrol
+                        - img "Create your own korean traditional medicine content with Canva" [ref=e364]
+                      - link "Create your own korean traditional medicine content with Canva" [ref=e365] [cursor=pointer]:
+                        - /url: https://www.canva.com/features/ai-image-generator/?prompt=High%20quality%20stock%20photo%20of%20korean%20traditional%20medicine%2C%20professional%20lighting%2C%20sharp%20focus%2C%20natural%20colors%2C%20realistic%20detail%2C%20modern%20composition%2C%20commercial%20use%20standard%2C%20editorial%20style%2C%20ultra%20HD%2C%20clean%20background&utm_source=pexels&utm_campaign=aigc_pexelscampaign&utm_medium=partner&utm_content=%20experiment%3Dsiglip_2_query_expansions%2Bcontrol
+                        - img "Create your own korean traditional medicine content with Canva" [ref=e366]
+                    - link "Bring your ideas to life with Canva AI" [ref=e367] [cursor=pointer]:
+                      - /url: https://www.canva.com/features/ai-image-generator/?prompt=High%20quality%20stock%20photo%20of%20korean%20traditional%20medicine%2C%20professional%20lighting%2C%20sharp%20focus%2C%20natural%20colors%2C%20realistic%20detail%2C%20modern%20composition%2C%20commercial%20use%20standard%2C%20editorial%20style%2C%20ultra%20HD%2C%20clean%20background&utm_source=pexels&utm_campaign=aigc_pexelscampaign&utm_medium=partner&utm_content=%20experiment%3Dsiglip_2_query_expansions%2Bcontrol
+                      - img [ref=e368]
+                      - paragraph [ref=e370]: Bring your ideas to life with Canva AI
+                    - link "Get started for free" [ref=e371] [cursor=pointer]:
+                      - /url: https://www.canva.com/features/ai-image-generator/?prompt=High%20quality%20stock%20photo%20of%20korean%20traditional%20medicine%2C%20professional%20lighting%2C%20sharp%20focus%2C%20natural%20colors%2C%20realistic%20detail%2C%20modern%20composition%2C%20commercial%20use%20standard%2C%20editorial%20style%2C%20ultra%20HD%2C%20clean%20background&utm_source=pexels&utm_campaign=aigc_pexelscampaign&utm_medium=partner&utm_content=%20experiment%3Dsiglip_2_query_expansions%2Bcontrol
+                      - generic [ref=e373]: Get started for free
+                  - article [ref=e376]:
+                    - link "Free Close-up of traditional herbal medicine being weighed on a balance scale among various herbs. Stock Photo" [ref=e377] [cursor=pointer]:
+                      - /url: /photo/dried-herbs-and-incense-on-a-weighing-scale-12809521/
+                      - img "Free Close-up of traditional herbal medicine being weighed on a balance scale among various herbs. Stock Photo" [ref=e378]
+                  - article [ref=e383]:
+                    - link "Free Traditional Korean temple with ivy-covered stone wall, serene nature setting. Stock Photo" [ref=e384] [cursor=pointer]:
+                      - /url: /photo/tranquil-korean-traditional-temple-architecture-33641761/
+                      - img "Free Traditional Korean temple with ivy-covered stone wall, serene nature setting. Stock Photo" [ref=e385]
+                  - article [ref=e390]:
+                    - link "Free Explore this traditional Korean food stall in Seoul's vibrant street market. Stock Photo" [ref=e391] [cursor=pointer]:
+                      - /url: /photo/traditional-korean-food-stall-in-seoul-31680674/
+                      - img "Free Explore this traditional Korean food stall in Seoul's vibrant street market. Stock Photo" [ref=e392]
+                  - article [ref=e397]:
+                    - link "Free Exterior of a Korean-themed building in Lembang, West Java, Indonesia. Stock Photo" [ref=e398] [cursor=pointer]:
+                      - /url: /photo/sign-by-a-korean-hotel-15927533/
+                      - img "Free Exterior of a Korean-themed building in Lembang, West Java, Indonesia. Stock Photo" [ref=e399]
+                  - article [ref=e404]:
+                    - link "Free Serene view of a traditional Korean temple surrounded by autumn foliage in Jeonju, South Korea. Stock Photo" [ref=e405] [cursor=pointer]:
+                      - /url: /photo/bed-of-leaves-in-front-of-buddhist-temple-20824214/
+                      - img "Free Serene view of a traditional Korean temple surrounded by autumn foliage in Jeonju, South Korea. Stock Photo" [ref=e406]
+                  - article [ref=e411]:
+                    - link "Free Image of a traditional brick stove used for outdoor cooking in Jeonju, South Korea. Stock Photo" [ref=e412] [cursor=pointer]:
+                      - /url: /photo/pots-on-vintage-stove-15376793/
+                      - img "Free Image of a traditional brick stove used for outdoor cooking in Jeonju, South Korea. Stock Photo" [ref=e413]
+                - generic [ref=e416]:
+                  - article [ref=e419]:
+                    - link "Free From above many wooden containers filled with assorted dried mushrooms with condiments and raw cashew nuts placed on bamboo mat Stock Photo" [ref=e420] [cursor=pointer]:
+                      - /url: /photo/wooden-containers-with-cashew-and-dried-mushrooms-235494/
+                      - img "Free From above many wooden containers filled with assorted dried mushrooms with condiments and raw cashew nuts placed on bamboo mat Stock Photo" [ref=e421]
+                  - article [ref=e426]:
+                    - link "Free Traditional herbalist preparing medicine in a smoky Jakarta workshop. Authentic culture. Stock Photo" [ref=e427] [cursor=pointer]:
+                      - /url: /photo/traditional-herbalist-in-jakarta-workshop-34838196/
+                      - img "Free Traditional herbalist preparing medicine in a smoky Jakarta workshop. Authentic culture. Stock Photo" [ref=e428]
+                  - generic [ref=e432]:
+                    - generic [ref=e433]:
+                      - heading "Sponsored Photos" [level=4] [ref=e434]
+                      - link [ref=e435] [cursor=pointer]:
+                        - /url: https://www.istockphoto.com/photos/korean%20traditional%20medicine?utm_source=pexels&utm_medium=affiliate&utm_campaign=sponsored_photo&utm_content=srp_inline_logo&utm_term=korean%20traditional%20medicine
+                        - img [ref=e436]
+                    - generic [ref=e439]:
+                      - link [ref=e440] [cursor=pointer]:
+                        - /url: https://www.istockphoto.com/photo/hand-waiving-a-korean-flag-on-a-blue-sky-gm1790576008-547683099?utm_source=pexels&utm_medium=affiliate&utm_campaign=sponsored_photo&utm_content=srp_inline_media&utm_term=korean%20traditional%20medicine
+                      - link [ref=e441] [cursor=pointer]:
+                        - /url: https://www.istockphoto.com/photo/scientists-and-doctors-are-fighting-to-create-a-coronavirus-vaccine-gm1210312125-350576336?utm_source=pexels&utm_medium=affiliate&utm_campaign=sponsored_photo&utm_content=srp_inline_media&utm_term=korean%20traditional%20medicine
+                      - link [ref=e442] [cursor=pointer]:
+                        - /url: https://www.istockphoto.com/photo/a-middle-aged-man-who-uses-telemedicine-to-listen-to-a-doctor-for-medication-gm1061564280-283780984?utm_source=pexels&utm_medium=affiliate&utm_campaign=sponsored_photo&utm_content=srp_inline_media&utm_term=korean%20traditional%20medicine
+                      - link [ref=e443] [cursor=pointer]:
+                        - /url: https://www.istockphoto.com/photo/a-doctor-proudly-displaying-the-virus-vaccination-gm1231746027-362223950?utm_source=pexels&utm_medium=affiliate&utm_campaign=sponsored_photo&utm_content=srp_inline_media&utm_term=korean%20traditional%20medicine
+                    - link [ref=e444] [cursor=pointer]:
+                      - /url: https://www.istockphoto.com/photos/korean%20traditional%20medicine?utm_source=pexels&utm_medium=affiliate&utm_campaign=sponsored_photo&utm_content=srp_inline_couponcode&utm_term=korean%20traditional%20medicine
+                      - img [ref=e447]:
+                        - generic [ref=e448]: Get 20% off with code PEXELS20 »
+                  - article [ref=e451]:
+                    - link "Free A stunning vase with green and white flowers on a wooden table in a traditional Korean setting. Stock Photo" [ref=e452] [cursor=pointer]:
+                      - /url: /photo/green-flowers-in-a-vase-standing-on-a-wooden-table-16724195/
+                      - img "Free A stunning vase with green and white flowers on a wooden table in a traditional Korean setting. Stock Photo" [ref=e453]
+                  - article [ref=e458]:
+                    - link "Free Close-up of traditional Korean food in a cultural table setting. Stock Photo" [ref=e459] [cursor=pointer]:
+                      - /url: /photo/korean-cookies-in-bowl-23355655/
+                      - img "Free Close-up of traditional Korean food in a cultural table setting. Stock Photo" [ref=e460]
+                  - article [ref=e465]:
+                    - link "Free A savory black chicken soup with chestnuts and herbs, perfect for food enthusiasts. Stock Photo" [ref=e466] [cursor=pointer]:
+                      - /url: /photo/burnt-chicken-on-plate-21938179/
+                      - img "Free A savory black chicken soup with chestnuts and herbs, perfect for food enthusiasts. Stock Photo" [ref=e467]
+              - button "Load More" [ref=e471] [cursor=pointer]:
+                - generic [ref=e473]: Load More
+            - navigation [ref=e474]:
+              - generic [ref=e476]:
+                - link "1" [ref=e478]:
+                  - /url: /search/korean%20traditional%20medicine/
+                  - generic [ref=e480]: "1"
+                - link "2" [ref=e481] [cursor=pointer]:
+                  - /url: /search/korean%20traditional%20medicine/?page=2
+                  - generic [ref=e483]: "2"
+                - link "3" [ref=e484] [cursor=pointer]:
+                  - /url: /search/korean%20traditional%20medicine/?page=3
+                  - generic [ref=e486]: "3"
+                - link "4" [ref=e487] [cursor=pointer]:
+                  - /url: /search/korean%20traditional%20medicine/?page=4
+                  - generic [ref=e489]: "4"
+                - link "5" [ref=e490] [cursor=pointer]:
+                  - /url: /search/korean%20traditional%20medicine/?page=5
+                  - generic [ref=e492]: "5"
+                - link "6" [ref=e493] [cursor=pointer]:
+                  - /url: /search/korean%20traditional%20medicine/?page=6
+                  - generic [ref=e495]: "6"
+                - link "Next" [ref=e496] [cursor=pointer]:
+                  - /url: /search/korean%20traditional%20medicine/?page=2
+                  - generic [ref=e498]: Next
+    - contentinfo [ref=e500]:
+      - separator [ref=e501]
+      - generic [ref=e502]:
+        - generic [ref=e503]:
+          - heading "Where stories come together." [level=2] [ref=e504]
+          - generic [ref=e505]:
+            - link "Download on iOS" [ref=e506] [cursor=pointer]:
+              - /url: https://itunes.apple.com/us/app/pexels/id1434330413/
+              - generic [ref=e508]: Download on iOS
+            - link "Download on Android" [ref=e509] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.pexels.app
+              - generic [ref=e511]: Download on Android
+          - list [ref=e512]:
+            - listitem [ref=e513]:
+              - link "Instagram" [ref=e514] [cursor=pointer]:
+                - /url: https://www.instagram.com/pexels/
+                - img [ref=e515]
+            - listitem [ref=e517]:
+              - link "Threads" [ref=e518] [cursor=pointer]:
+                - /url: https://www.threads.net/@pexels/
+                - img [ref=e519]
+            - listitem [ref=e521]:
+              - link "YouTube" [ref=e522] [cursor=pointer]:
+                - /url: https://www.youtube.com/pexelsphotos/
+                - img [ref=e523]
+            - listitem [ref=e525]:
+              - link "TikTok" [ref=e526] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@pexels/
+                - img [ref=e527]
+            - listitem [ref=e529]:
+              - link "LinkedIn" [ref=e530] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/pexels/
+                - img [ref=e531]
+            - listitem [ref=e533]:
+              - link "X" [ref=e534] [cursor=pointer]:
+                - /url: https://x.com/pexels/
+                - img [ref=e535]
+        - generic [ref=e537]:
+          - list [ref=e538]:
+            - heading "Pexels" [level=3] [ref=e539]
+            - listitem [ref=e540]:
+              - link "Free Stock Photos" [ref=e541] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e542]:
+              - link "Free Videos" [ref=e543] [cursor=pointer]:
+                - /url: /videos/
+            - listitem [ref=e544]:
+              - link "Popular searches" [ref=e545] [cursor=pointer]:
+                - /url: /popular-searches/
+            - listitem [ref=e546]:
+              - link "Collections" [ref=e547] [cursor=pointer]:
+                - /url: /discover/
+            - listitem [ref=e548]:
+              - link "Challenges" [ref=e549] [cursor=pointer]:
+                - /url: /challenges/
+            - listitem [ref=e550]:
+              - link "Leaderboard" [ref=e551] [cursor=pointer]:
+                - /url: /leaderboard/
+            - listitem [ref=e552]:
+              - link "Other plugins & apps" [ref=e553] [cursor=pointer]:
+                - /url: /pro/
+          - list [ref=e554]:
+            - heading "Company" [level=3] [ref=e555]
+            - listitem [ref=e556]:
+              - link "About" [ref=e557] [cursor=pointer]:
+                - /url: /about/
+            - listitem [ref=e558]:
+              - link "Blog" [ref=e559] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=e560]:
+              - link "Help Center" [ref=e561] [cursor=pointer]:
+                - /url: https://help.pexels.com/hc/en-us/
+            - listitem [ref=e562]:
+              - link "Report content" [ref=e563] [cursor=pointer]:
+                - /url: /report/
+            - listitem [ref=e564]:
+              - link "Become a Hero" [ref=e565] [cursor=pointer]:
+                - /url: /hero/
+            - listitem [ref=e566]:
+              - link "Partner with Pexels" [ref=e567] [cursor=pointer]:
+                - /url: /become-a-partner/
+            - listitem [ref=e568]:
+              - link "Image & Video API" [ref=e569] [cursor=pointer]:
+                - /url: /api/
+            - listitem [ref=e570]: Sign Up
+        - list [ref=e571]:
+          - listitem [ref=e572]:
+            - heading "Free Stock Photos" [level=3] [ref=e573]
+          - listitem [ref=e574]:
+            - generic [ref=e576]:
+              - link "Black and white photography" [ref=e578] [cursor=pointer]:
+                - /url: /search/black%20and%20white/
+              - link "Happy birthday images" [ref=e579] [cursor=pointer]:
+                - /url: /search/happy%20birthday/
+              - link "Free business videos" [ref=e580] [cursor=pointer]:
+                - /url: /search/videos/business/
+              - link "Happy new year images" [ref=e581] [cursor=pointer]:
+                - /url: /search/happy%20new%20year/
+              - link "Cool wallpapers" [ref=e582] [cursor=pointer]:
+                - /url: /search/cool%20wallpaper/
+              - link "Best HD wallpapers" [ref=e583] [cursor=pointer]:
+                - /url: /search/hd%20wallpaper/
+              - link "Galaxy wallpaper" [ref=e584] [cursor=pointer]:
+                - /url: /search/galaxy%20wallpaper/
+              - link "Lock screen wallpaper" [ref=e585] [cursor=pointer]:
+                - /url: /search/lock%20screen%20wallpaper/
+              - link "iPhone wallpaper" [ref=e586] [cursor=pointer]:
+                - /url: /search/iphone%20wallpaper/
+              - link "4K wallpaper" [ref=e587] [cursor=pointer]:
+                - /url: /search/4k%20wallpaper/
+              - link "Samsung wallpaper" [ref=e588] [cursor=pointer]:
+                - /url: /search/samsung%20wallpaper/
+              - link "Love wallpaper" [ref=e589] [cursor=pointer]:
+                - /url: /search/love%20wallpaper/
+              - link "Mobile wallpaper" [ref=e590] [cursor=pointer]:
+                - /url: /search/mobile%20wallpaper/
+      - generic [ref=e592]:
+        - generic [ref=e593]: © 2026 Pexels
+        - generic [ref=e595]:
+          - generic:
+            - img
+          - link "Terms of Use" [ref=e597] [cursor=pointer]:
+            - /url: /terms-of-service/
+          - link "Privacy Policy" [ref=e598] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "License" [ref=e599] [cursor=pointer]:
+            - /url: /license/
+          - link "Imprint" [ref=e600] [cursor=pointer]:
+            - /url: /imprint/
+          - link "Cookies Policy" [ref=e601] [cursor=pointer]:
+            - /url: /cookies/
+          - generic:
+            - img
+        - button "English" [ref=e604] [cursor=pointer]:
+          - generic [ref=e605]:
+            - img [ref=e606]
+            - generic [ref=e608]: English
+      - separator [ref=e609]
+  - alert [ref=e610]
+  - status [ref=e611]
+  - region "Cookie banner" [ref=e612]:
+    - alertdialog "사생활" [ref=e613]:
+      - generic [ref=e615]:
+        - paragraph [ref=e618]: 우리는 소셜 미디어 기능의 제공과 데이터 분석 및 본 사이트가 올바로 동작하고 개인화된 콘텐츠와 광고를 제공하기 위해 쿠키를 사용하고 있습니다. 회사 사이트에 대한 귀하의 사용 정보를 회사의 소셜 미디어, 광고 및 분석 협력사와 공유합니다.
+        - generic [ref=e620]:
+          - button "쿠키 설정" [active] [ref=e621] [cursor=pointer]
+          - button "모든 쿠키 허용" [ref=e622] [cursor=pointer]
