@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>나는 태음인일까? 태음인 자가진단 체크리스트 20가지</title>
+  <title>Am I Taeeum-in? 20-Point Self-Diagnosis Checklist + Korean Herbal Medicine Guide</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+      font-family: 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
       background: #f9f5f0;
       color: #333;
       line-height: 1.8;
@@ -17,22 +17,23 @@
     header {
       background: linear-gradient(135deg, #4a7c59, #2d5a3d);
       color: white;
-      padding: 48px 24px 36px;
+      padding: 56px 24px 44px;
       text-align: center;
     }
     header .tag {
       display: inline-block;
       background: rgba(255,255,255,0.2);
       border-radius: 20px;
-      padding: 4px 14px;
+      padding: 4px 16px;
       font-size: 13px;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
+      letter-spacing: 0.5px;
     }
     header h1 {
-      font-size: clamp(22px, 5vw, 36px);
+      font-size: clamp(22px, 5vw, 38px);
       font-weight: 800;
-      line-height: 1.4;
-      margin-bottom: 12px;
+      line-height: 1.35;
+      margin-bottom: 14px;
     }
     header p {
       font-size: 14px;
@@ -48,7 +49,7 @@
     section { margin-bottom: 40px; }
 
     h2 {
-      font-size: 20px;
+      font-size: 21px;
       font-weight: 700;
       color: #2d5a3d;
       border-left: 4px solid #4a7c59;
@@ -68,13 +69,13 @@
     .intro-box {
       background: #fff;
       border-radius: 12px;
-      padding: 20px 24px;
+      padding: 22px 26px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
       margin-bottom: 32px;
     }
     .intro-box strong { color: #2d5a3d; }
 
-    /* 체크리스트 */
+    /* Checklist */
     .checklist-group {
       background: #fff;
       border-radius: 12px;
@@ -92,12 +93,11 @@
       display: flex;
       align-items: flex-start;
       gap: 12px;
-      padding: 8px 0;
       border-bottom: 1px solid #f0f0f0;
       cursor: pointer;
-      transition: background 0.15s;
       border-radius: 6px;
       padding: 8px 6px;
+      transition: background 0.15s;
     }
     .check-item:last-child { border-bottom: none; }
     .check-item:hover { background: #f5faf6; }
@@ -116,7 +116,7 @@
     }
     .check-item.checked label { color: #4a7c59; font-weight: 600; }
 
-    /* 카운터 */
+    /* Counter bar */
     .counter-bar {
       position: sticky;
       top: 0;
@@ -131,7 +131,7 @@
     }
     .counter-bar span { font-size: 20px; font-weight: 800; }
 
-    /* 결과 */
+    /* Result boxes */
     .result-box {
       border-radius: 12px;
       padding: 22px 24px;
@@ -149,7 +149,7 @@
     .result-box.mid  .result-label { color: #f57f17; }
     .result-box.low  .result-label { color: #c2185b; }
 
-    /* 표 */
+    /* Table */
     table {
       width: 100%;
       border-collapse: collapse;
@@ -169,7 +169,7 @@
     tr:last-child td { border-bottom: none; }
     tr:hover td { background: #f5faf6; }
 
-    /* 카드 */
+    /* Cards */
     .card {
       background: #fff;
       border-radius: 12px;
@@ -177,6 +177,7 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
       margin-bottom: 14px;
     }
+
     .food-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -207,25 +208,14 @@
       margin-top: 16px;
     }
 
-    .herb-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
-    .herb-tag {
-      background: #e8f5e9;
-      color: #2d5a3d;
-      border-radius: 20px;
-      padding: 6px 14px;
-      font-size: 13px;
-      font-weight: 600;
+    .herb-collage {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
     }
 
-    footer {
-      text-align: center;
-      padding: 24px;
-      font-size: 12px;
-      color: #999;
-      border-top: 1px solid #eee;
-    }
-
-    /* 섹션 구분 사진 */
+    /* Section photos */
     .section-photo {
       width: 100%;
       max-width: 760px;
@@ -248,6 +238,14 @@
       text-align: right;
     }
 
+    footer {
+      text-align: center;
+      padding: 28px;
+      font-size: 12px;
+      color: #999;
+      border-top: 1px solid #eee;
+    }
+
     @media (max-width: 520px) {
       .food-grid { grid-template-columns: 1fr; }
       .section-photo img { height: 180px; }
@@ -257,204 +255,204 @@
 <body>
 
 <header>
-  <div class="tag">체질별 한약 가이드 블로그</div>
-  <h1>나는 태음인일까?<br>태음인 자가진단 체크리스트 20가지</h1>
-  <p>예상 읽기 시간: 7분 &nbsp;|&nbsp; + 체질별 한약 가이드</p>
+  <div class="tag">Korean Constitutional Medicine Guide</div>
+  <h1>Am I Taeeum-in (Metal Type)?<br>20-Point Self-Diagnosis Checklist</h1>
+  <p>Estimated reading time: 7 min &nbsp;|&nbsp; + Korean Herbal Medicine Guide</p>
 </header>
 
 <div class="counter-bar" id="counterBar">
-  체크한 항목: <span id="count">0</span> / 20개
+  Checked: <span id="count">0</span> / 20 items
 </div>
 
 <main>
 
-  <!-- 소개 -->
+  <!-- Intro -->
   <div class="intro-box">
-    <p>사상체질 중 한국인에게 가장 많은 체질이 바로 <strong>태음인</strong>입니다. 전체 인구의 약 40~50%가 태음인으로 분류될 만큼 흔한 체질이지만, 정작 "내가 태음인인지" 정확히 아는 분은 많지 않아요.</p>
-    <p>오늘은 한의원에 가지 않아도 스스로 확인할 수 있는 <strong>태음인 자가진단 체크리스트 20가지</strong>를 정리했습니다. 체크 결과에 따라 맞는 한약과 피해야 할 음식까지 함께 알려드릴게요.</p>
+    <p>Among the four constitutional types in Korean traditional medicine, <strong>Taeeum-in</strong> is the most common — accounting for roughly 40–50% of the Korean population. Despite this, many people don't know whether they actually belong to this type.</p>
+    <p>This guide walks you through <strong>20 self-diagnosis items</strong> you can check without visiting a clinic. Based on your score, we'll also recommend herbal remedies and foods to embrace or avoid.</p>
   </div>
 
-  <!-- 사진1: 한약재 유리병 -->
+  <!-- Section photo 1 -->
   <div class="section-photo">
-    <img src="images/photo1.jpg" alt="한약재 보관 유리병들" loading="lazy" />
+    <img src="images/photo1.jpg" alt="Traditional Korean herbal medicine jars" loading="lazy" />
     <div class="photo-caption">Photo by Pexels · Free to use</div>
   </div>
 
-  <!-- 태음인이란 -->
+  <!-- What is Taeeum-in -->
   <section>
-    <h2>태음인이란? (30초 요약)</h2>
+    <h2>What Is Taeeum-in? (30-Second Overview)</h2>
     <div class="card">
-      <p>사상의학은 조선 말기 이제마 선생이 창시한 한의학 이론으로, 사람의 체질을 태양·태음·소양·소음 네 가지로 나눕니다.</p>
-      <p>태음인의 핵심 키워드는 <strong>"저장과 축적"</strong>입니다. 몸 안에 에너지와 물질을 쌓아두는 경향이 강해서, 체격이 크고 살이 잘 찌는 반면 한번 건강이 무너지면 회복이 더딘 편이에요.</p>
+      <p>Sasang Constitutional Medicine was founded by the 19th-century Korean scholar Yi Je-ma. It classifies people into four types: Taeyang, Taeeum, Soyang, and Soeum.</p>
+      <p>The defining characteristic of Taeeum-in is <strong>"storage and accumulation."</strong> This type tends to store energy and nutrients in the body, resulting in a larger frame and a tendency to gain weight. Once health deteriorates, however, recovery can be slow.</p>
     </div>
   </section>
 
-  <!-- 사진2: 한약재 나무그릇 -->
+  <!-- Section photo 2 -->
   <div class="section-photo">
-    <img src="images/photo2.jpg" alt="전통 한약재 나무그릇" loading="lazy" />
+    <img src="images/photo2.jpg" alt="Traditional herbal medicine in wooden bowl" loading="lazy" />
     <div class="photo-caption">Photo by Pexels · Free to use</div>
   </div>
 
-  <!-- 체크리스트 -->
+  <!-- Checklist -->
   <section>
-    <h2>태음인 자가진단 체크리스트</h2>
-    <p style="margin-bottom:16px; color:#666;">아래 20가지 항목을 읽고, 해당하는 항목에 체크해보세요.</p>
+    <h2>Taeeum-in Self-Diagnosis Checklist</h2>
+    <p style="margin-bottom:16px; color:#666;">Check every item that applies to you.</p>
 
     <div class="checklist-group">
-      <h3>🏃 신체·외모</h3>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>체격이 크거나 골격이 굵은 편이다</label></div>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>살이 잘 찌고, 한번 찐 살은 잘 빠지지 않는다</label></div>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>땀을 많이 흘리는 편이다 (특히 운동할 때, 식사할 때)</label></div>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>피부가 두껍고 거친 편이며 모공이 넓다</label></div>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>손발이 따뜻하거나 더운 편이다</label></div>
+      <h3>🏃 Body &amp; Appearance</h3>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>I have a large build or dense bone structure.</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>I gain weight easily, and once gained, it's hard to lose.</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>I sweat heavily, especially during exercise or meals.</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>My skin tends to be thick and rough, with large pores.</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>My hands and feet feel warm or even hot.</label></div>
     </div>
 
     <div class="checklist-group">
-      <h3>💭 성격·기질</h3>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>한번 결심한 일은 끝까지 밀어붙이는 추진력이 강하다</label></div>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>감정을 잘 드러내지 않고 속으로 삭이는 편이다</label></div>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>새로운 것보다 익숙하고 안정적인 것을 좋아한다</label></div>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>욕심이 있고, 무언가를 모으거나 저축하는 것을 즐긴다</label></div>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>한번 화가 나면 오래 마음에 담아두는 편이다</label></div>
+      <h3>💭 Personality &amp; Temperament</h3>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>Once I set my mind to something, I see it through — strong follow-through.</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>I tend to bottle up emotions rather than express them outwardly.</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>I prefer the familiar and stable over new or unpredictable situations.</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>I'm ambitious and enjoy collecting, saving, or accumulating things.</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>When I get angry, I hold onto the feeling for a long time.</label></div>
     </div>
 
     <div class="checklist-group">
-      <h3>🍚 음식·소화</h3>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>식욕이 왕성하고 먹는 양이 많은 편이다</label></div>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>밀가루 음식, 고기류를 좋아하고 잘 소화시킨다</label></div>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>변비가 생기기 쉽고 장이 예민하지 않은 편이다</label></div>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>음식 종류를 가리지 않고 대부분 잘 먹는다</label></div>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>과식을 해도 금방 소화되는 편이다</label></div>
+      <h3>🍚 Diet &amp; Digestion</h3>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>I have a strong appetite and tend to eat large portions.</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>I enjoy and digest flour-based foods and meat well.</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>I'm prone to constipation rather than having a sensitive gut.</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>I'm not a picky eater — I can eat almost anything.</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>Even after overeating, I digest relatively quickly.</label></div>
     </div>
 
     <div class="checklist-group">
-      <h3>💪 건강·체력</h3>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>평소 체력이 좋고 지구력이 강하다</label></div>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>심폐기능이 약한 편이며 숨이 자주 차다 (태음인 약점)</label></div>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>피로가 누적될수록 기침·가래·코막힘이 생기기 쉽다</label></div>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>피부 트러블(두드러기, 아토피)이 반복되는 편이다</label></div>
-      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>관절이나 근육이 굵고 단단하지만 유연성은 부족하다</label></div>
+      <h3>💪 Health &amp; Stamina</h3>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>I generally have good stamina and endurance.</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>My cardiopulmonary function feels weak — I get winded easily. (Taeeum-in weak point)</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>When fatigue builds up, I'm prone to coughs, phlegm, or nasal congestion.</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>I experience recurring skin issues such as hives or atopic dermatitis.</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>My joints and muscles are thick and firm, but I lack flexibility.</label></div>
     </div>
   </section>
 
-  <!-- 사진3: 한약재 + 부항컵 -->
+  <!-- Section photo 3 -->
   <div class="section-photo">
-    <img src="images/photo3.jpg" alt="한약재와 부항컵" loading="lazy" />
+    <img src="images/photo3.jpg" alt="Korean herbal medicine with cupping glasses" loading="lazy" />
     <div class="photo-caption">Photo by Pexels · Free to use</div>
   </div>
 
-  <!-- 결과 -->
+  <!-- Results -->
   <section>
-    <h2>결과 확인</h2>
+    <h2>Your Results</h2>
     <div class="result-box high">
-      <div class="result-label">✅ 15개 이상 해당 → 태음인 가능성 매우 높음</div>
-      <p>거의 확실하게 태음인 체질입니다. 아래 태음인 관리법을 꼼꼼히 읽어보세요. 한의원 방문 시 "태음인 체질로 진료받고 싶다"고 말씀하시면 더 정확한 진단을 받을 수 있어요.</p>
+      <div class="result-label">✅ 15 or more → Very likely Taeeum-in</div>
+      <p>You almost certainly fall into the Taeeum-in constitutional type. Read through the management tips below carefully. When visiting a Korean medicine clinic, ask for a "Taeeum-in constitutional diagnosis" for more precise guidance.</p>
     </div>
     <div class="result-box mid">
-      <div class="result-label">🟡 10~14개 해당 → 태음인 성향 강함</div>
-      <p>태음인 성향이 강하지만, 일부 소양인·소음인 특성이 섞여 있을 수 있습니다. 전문 한의사 진단으로 정확한 체질을 확인해보시길 추천합니다.</p>
+      <div class="result-label">🟡 10–14 → Strong Taeeum-in tendency</div>
+      <p>You show strong Taeeum-in traits, but may have some overlap with Soyang-in or Soeum-in characteristics. A professional practitioner can give you a definitive diagnosis.</p>
     </div>
     <div class="result-box low">
-      <div class="result-label">🔴 9개 이하 해당 → 다른 체질 가능성</div>
-      <p>태음인보다는 소양인이나 소음인일 가능성이 높습니다. 다른 체질 체크리스트도 확인해보세요.</p>
+      <div class="result-label">🔴 9 or fewer → Likely a different type</div>
+      <p>You're more likely Soyang-in or Soeum-in. Check the other constitutional type checklists to find your best match.</p>
     </div>
   </section>
 
-  <!-- 건강 약점 -->
-  <section>
-    <h2>태음인의 건강 약점과 관리 포인트</h2>
-    <div class="card">
-      <p>태음인은 체력과 지구력이 좋은 반면, <strong>호흡기와 피부</strong>가 가장 취약한 부위입니다.</p>
-      <h3>잘 걸리는 질환</h3>
-      <p>고혈압·고지혈증·비만, 기관지염·폐 관련 질환·천식, 아토피·두드러기 등 피부 질환, 변비</p>
-      <h3>특히 주의해야 할 생활 습관</h3>
-      <p>과식과 폭식을 반드시 피해야 합니다. 땀을 규칙적으로 흘리는 운동이 매우 중요하며, 적극적인 사회 활동도 건강에 도움이 됩니다.</p>
-    </div>
-  </section>
-
-  <!-- 사진4: 한국 전통 상차림 -->
+  <!-- Section photo 4 -->
   <div class="section-photo">
-    <img src="images/photo4.jpg" alt="한국 전통 상차림" loading="lazy" />
+    <img src="images/photo4.jpg" alt="Korean traditional table setting" loading="lazy" />
     <div class="photo-caption">Photo by Pexels · Free to use</div>
   </div>
 
-  <!-- 한약 -->
+  <!-- Health weaknesses -->
   <section>
-    <h2>태음인에게 맞는 한약</h2>
+    <h2>Taeeum-in Health Weaknesses &amp; Management</h2>
+    <div class="card">
+      <p>Taeeum-in types are physically strong and resilient, but their biggest vulnerabilities are the <strong>respiratory system and skin</strong>.</p>
+      <h3>Common Conditions</h3>
+      <p>High blood pressure, hyperlipidemia, obesity (due to energy-storing tendency), bronchitis, lung-related illnesses, asthma, atopic dermatitis, hives, constipation.</p>
+      <h3>Key Lifestyle Advice</h3>
+      <p><strong>Avoid overeating and binge eating.</strong> Since Taeeum-in types have voracious appetites, dietary discipline is essential. <strong>Regular sweat-producing exercise</strong> is critical — without sweating, toxins accumulate. Staying socially active and seeking new stimulation also supports overall vitality.</p>
+    </div>
+  </section>
+
+  <!-- Section photo 5 -->
+  <div class="section-photo">
+    <img src="images/photo5.jpg" alt="Korean herbal decoction tea" loading="lazy" />
+    <div class="photo-caption">Photo by Pexels · Free to use</div>
+  </div>
+
+  <!-- Herbal medicine -->
+  <section>
+    <h2>Recommended Herbal Formulas for Taeeum-in</h2>
     <table>
       <thead>
-        <tr><th>처방명</th><th>주요 효능</th><th>적합한 증상</th></tr>
+        <tr><th>Formula Name</th><th>Primary Effect</th><th>Best For</th></tr>
       </thead>
       <tbody>
-        <tr><td>태음조위탕</td><td>소화·순환 개선</td><td>비만, 과식, 피로</td></tr>
-        <tr><td>열다한소탕</td><td>호흡기 강화</td><td>기침, 가래, 기관지 약화</td></tr>
-        <tr><td>청폐사간탕</td><td>폐열 해소</td><td>피부 트러블, 열감</td></tr>
-        <tr><td>조위승청탕</td><td>위장 조절</td><td>변비, 소화불량</td></tr>
+        <tr><td>Taeeum-jowi-tang (太陰調胃湯)</td><td>Improves digestion &amp; circulation</td><td>Obesity, overeating, fatigue</td></tr>
+        <tr><td>Yeolda-hanso-tang (熱多寒少湯)</td><td>Strengthens respiratory system</td><td>Cough, phlegm, weak bronchi</td></tr>
+        <tr><td>Cheongpye-sagan-tang (淸肺瀉肝湯)</td><td>Clears lung heat</td><td>Skin flare-ups, heat sensation</td></tr>
+        <tr><td>Jowi-seungcheong-tang (調胃升淸湯)</td><td>Regulates the stomach</td><td>Constipation, indigestion</td></tr>
       </tbody>
     </table>
-    <div class="notice">⚠️ 위 처방은 참고용입니다. 실제 복용은 반드시 한의사 진단 후 개인 상태에 맞게 조정받으세요.</div>
+    <div class="notice">⚠️ The formulas listed above are for reference only. Always consult a licensed practitioner of Korean medicine before taking any herbal remedy — the right formula varies by individual.</div>
 
-    <h3 style="margin-top:24px;">태음인에게 좋은 한약재</h3>
+    <h3 style="margin-top:24px;">Key Herbs for Taeeum-in</h3>
     <img src="images/herb_collage.jpg"
-         alt="태음인 한약재 5가지: 율무, 도라지, 연자육, 오미자, 칡"
-         style="width:100%; border-radius:12px; margin-top:12px; box-shadow:0 4px 16px rgba(0,0,0,0.12);"
+         alt="5 key herbs for Taeeum-in: adlay, bellflower root, lotus seed, schisandra berry, kudzu root"
+         class="herb-collage"
          loading="lazy" />
   </section>
 
-  <!-- 사진5: 한방차 -->
-  <div class="section-photo">
-    <img src="images/photo5.jpg" alt="한방차 탕약" loading="lazy" />
-    <div class="photo-caption">Photo by Pexels · Free to use</div>
-  </div>
-
-  <!-- 음식 -->
+  <!-- Foods -->
   <section>
-    <h2>태음인이 먹으면 좋은 음식 vs 피해야 할 음식</h2>
+    <h2>Best &amp; Worst Foods for Taeeum-in</h2>
     <div class="food-grid">
       <div class="food-good">
-        <h3>✅ 잘 맞는 음식</h3>
-        <p>콩류(두부·된장·청국장), 율무, 견과류, 소고기, 배, 밤, 은행, 잣, 무, 도라지, 연근, 미역, 다시마</p>
+        <h3>✅ Beneficial Foods</h3>
+        <p>Soy products (tofu, doenjang, cheonggukjang), adlay (Job's tears), nuts, beef, pear, chestnut, ginkgo nut, pine nut, radish, bellflower root, lotus root, seaweed, kelp</p>
       </div>
       <div class="food-bad">
-        <h3>❌ 피하면 좋은 음식</h3>
-        <p>닭고기(과다 섭취), 인삼(열이 많은 태음인에게 부작용 가능), 자극적이고 기름진 음식, 밀가루 과다 섭취</p>
+        <h3>❌ Foods to Limit</h3>
+        <p>Excessive chicken, ginseng (may cause side effects in heat-prone Taeeum-in), spicy or greasy foods, excessive wheat/flour products</p>
       </div>
     </div>
-    <div class="notice">💊 <strong>많이 묻는 질문:</strong> 태음인은 홍삼 먹으면 안 되나요?<br>냉한 태음인은 홍삼이 맞을 수 있지만, 열이 많은 태음인은 두통·얼굴 홍조 등 부작용이 나타날 수 있어요. 반드시 한의사와 상담 후 복용하세요.</div>
+    <div class="notice">💊 <strong>Common question:</strong> Can Taeeum-in take red ginseng (Hongsam)?<br>Cold-natured Taeeum-in types may benefit from red ginseng, but heat-prone types may experience headaches or facial flushing. Always consult a practitioner first.</div>
   </section>
 
-  <!-- 다이어트 -->
+  <!-- Weight management -->
   <section>
-    <h2>태음인 다이어트, 한방으로 접근하는 법</h2>
+    <h2>Taeeum-in Weight Management: A Korean Medicine Approach</h2>
     <div class="card">
-      <p>태음인은 사상체질 중 비만이 가장 많은 체질입니다. 살이 잘 찌는 이유는 게으름이 아니라 <strong>체질적으로 에너지를 저장하는 성질</strong>이 강하기 때문이에요.</p>
-      <p><strong>첫째,</strong> 땀을 내는 운동이 필수입니다. 걷기·수영·자전거 등 유산소 운동을 꾸준히 하면서 땀을 내는 것이 가장 중요합니다.</p>
-      <p><strong>둘째,</strong> 폭식·과식 차단입니다. 태음조위탕 계열 한약은 과식 충동을 줄이고 포만감을 높이는 데 도움이 돼요.</p>
+      <p>Taeeum-in types have the highest rate of obesity among the four constitutional types — not because of laziness, but because their bodies are <strong>constitutionally programmed to store energy</strong>.</p>
+      <p><strong>First,</strong> sweat-producing exercise is non-negotiable. Activities like walking, swimming, and cycling help open the pores and expel toxins, which is the cornerstone of Taeeum-in health.</p>
+      <p><strong>Second,</strong> controlling portion size matters most. Herbal formulas in the Taeeum-jowi-tang family can help reduce binge-eating urges and increase satiety.</p>
     </div>
   </section>
 
   <!-- FAQ -->
   <section>
-    <h2>자주 묻는 질문 (FAQ)</h2>
+    <h2>Frequently Asked Questions</h2>
     <div class="faq-item">
-      <div class="faq-q">Q. 체질은 평생 변하지 않나요?</div>
-      <div class="faq-a">사상체질은 태어날 때부터 정해진 고유한 체질로, 기본적으로 평생 변하지 않습니다. 다만 나이·생활습관·환경에 따라 체질 특성이 강해지거나 약해질 수는 있어요.</div>
+      <div class="faq-q">Q. Does your constitutional type ever change?</div>
+      <div class="faq-a">Sasang constitutional type is considered innate and fixed at birth. However, the intensity of certain traits can shift with age, lifestyle, and environment.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">Q. 태음인인데 소양인 증상도 있어요. 왜 그런가요?</div>
-      <div class="faq-a">순수하게 한 체질만 나타나는 경우는 드물어요. 두 체질의 경계에 있는 분들도 많고, 스트레스나 건강 상태에 따라 다른 체질 증상이 나타나기도 합니다.</div>
+      <div class="faq-q">Q. I'm Taeeum-in but I also show Soyang-in symptoms — why?</div>
+      <div class="faq-a">Pure single-type presentations are rare. Many people sit near the boundary of two types, and stress or health fluctuations can temporarily surface traits of another type. A practitioner's in-person diagnosis is the most reliable way to determine your type.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">Q. 온라인 체질 검사 결과를 믿어도 될까요?</div>
-      <div class="faq-a">체질 자가진단은 참고용으로만 활용하세요. 실제 한약 처방은 반드시 한의사의 전문 진단을 거쳐야 합니다. 같은 태음인이라도 개인마다 다른 처방이 필요해요.</div>
+      <div class="faq-q">Q. Can I trust an online constitutional type test?</div>
+      <div class="faq-a">Online self-assessments are a useful starting point, but should not replace professional diagnosis. Even two people of the same constitutional type can require entirely different herbal prescriptions.</div>
     </div>
   </section>
 
 </main>
 
 <footer>
-  <p>이 글은 정보 제공 목적으로 작성되었으며, 의료적 진단·처방을 대체하지 않습니다. 실제 한약 복용은 반드시 한의사와 상담하세요.</p>
-  <p style="margin-top:8px;">© 2026 체질별 한약 가이드 블로그</p>
+  <p>This content is for informational purposes only and does not constitute medical advice or replace professional diagnosis. Always consult a licensed Korean medicine practitioner before taking herbal remedies.</p>
+  <p style="margin-top:8px;">© 2026 Korean Constitutional Medicine Guide</p>
 </footer>
 
 <script>
