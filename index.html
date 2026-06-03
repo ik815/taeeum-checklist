@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나는 태음인일까? 태음인 자가진단 체크리스트 20가지</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+      background: #f9f5f0;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4a7c59, #2d5a3d);
+      color: white;
+      padding: 48px 24px 36px;
+      text-align: center;
+    }
+    header .tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+    header h1 {
+      font-size: clamp(22px, 5vw, 36px);
+      font-weight: 800;
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+    header p {
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #2d5a3d;
+      border-left: 4px solid #4a7c59;
+      padding-left: 12px;
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #555;
+      margin: 20px 0 10px;
+    }
+
+    p { margin-bottom: 12px; color: #444; }
+
+    .intro-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin-bottom: 32px;
+    }
+    .intro-box strong { color: #2d5a3d; }
+
+    /* 체크리스트 */
+    .checklist-group {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin-bottom: 16px;
+    }
+    .checklist-group h3 {
+      color: #2d5a3d;
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid #f0f0f0;
+      cursor: pointer;
+      transition: background 0.15s;
+      border-radius: 6px;
+      padding: 8px 6px;
+    }
+    .check-item:last-child { border-bottom: none; }
+    .check-item:hover { background: #f5faf6; }
+    .check-item input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      accent-color: #4a7c59;
+      flex-shrink: 0;
+      margin-top: 2px;
+      cursor: pointer;
+    }
+    .check-item label {
+      font-size: 15px;
+      cursor: pointer;
+      flex: 1;
+    }
+    .check-item.checked label { color: #4a7c59; font-weight: 600; }
+
+    /* 카운터 */
+    .counter-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #2d5a3d;
+      color: white;
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 15px;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .counter-bar span { font-size: 20px; font-weight: 800; }
+
+    /* 결과 */
+    .result-box {
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 14px;
+    }
+    .result-box.high { background: #e8f5e9; border-left: 5px solid #4a7c59; }
+    .result-box.mid  { background: #fff8e1; border-left: 5px solid #f9a825; }
+    .result-box.low  { background: #fce4ec; border-left: 5px solid #e91e63; }
+    .result-box .result-label {
+      font-size: 16px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .result-box.high .result-label { color: #2d5a3d; }
+    .result-box.mid  .result-label { color: #f57f17; }
+    .result-box.low  .result-label { color: #c2185b; }
+
+    /* 표 */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    th {
+      background: #4a7c59;
+      color: white;
+      padding: 12px 14px;
+      text-align: left;
+    }
+    td { padding: 11px 14px; border-bottom: 1px solid #f0f0f0; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #f5faf6; }
+
+    /* 카드 */
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin-bottom: 14px;
+    }
+    .food-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .food-good { background: #e8f5e9; border-radius: 10px; padding: 16px; }
+    .food-bad  { background: #fce4ec; border-radius: 10px; padding: 16px; }
+    .food-good h3 { color: #2d5a3d; margin-top: 0; }
+    .food-bad  h3 { color: #c2185b; margin-top: 0; }
+
+    /* FAQ */
+    .faq-item {
+      background: #fff;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .faq-q { font-weight: 700; color: #2d5a3d; margin-bottom: 8px; }
+    .faq-a { color: #555; font-size: 14px; }
+
+    .notice {
+      background: #fff3e0;
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 13px;
+      color: #795548;
+      margin-top: 16px;
+    }
+
+    .herb-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .herb-tag {
+      background: #e8f5e9;
+      color: #2d5a3d;
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      color: #999;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 520px) {
+      .food-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="tag">체질별 한약 가이드 블로그</div>
+  <h1>나는 태음인일까?<br>태음인 자가진단 체크리스트 20가지</h1>
+  <p>예상 읽기 시간: 7분 &nbsp;|&nbsp; + 체질별 한약 가이드</p>
+</header>
+
+<div class="counter-bar" id="counterBar">
+  체크한 항목: <span id="count">0</span> / 20개
+</div>
+
+<main>
+
+  <!-- 소개 -->
+  <div class="intro-box">
+    <p>사상체질 중 한국인에게 가장 많은 체질이 바로 <strong>태음인</strong>입니다. 전체 인구의 약 40~50%가 태음인으로 분류될 만큼 흔한 체질이지만, 정작 "내가 태음인인지" 정확히 아는 분은 많지 않아요.</p>
+    <p>오늘은 한의원에 가지 않아도 스스로 확인할 수 있는 <strong>태음인 자가진단 체크리스트 20가지</strong>를 정리했습니다. 체크 결과에 따라 맞는 한약과 피해야 할 음식까지 함께 알려드릴게요.</p>
+  </div>
+
+  <!-- 태음인이란 -->
+  <section>
+    <h2>태음인이란? (30초 요약)</h2>
+    <div class="card">
+      <p>사상의학은 조선 말기 이제마 선생이 창시한 한의학 이론으로, 사람의 체질을 태양·태음·소양·소음 네 가지로 나눕니다.</p>
+      <p>태음인의 핵심 키워드는 <strong>"저장과 축적"</strong>입니다. 몸 안에 에너지와 물질을 쌓아두는 경향이 강해서, 체격이 크고 살이 잘 찌는 반면 한번 건강이 무너지면 회복이 더딘 편이에요.</p>
+    </div>
+  </section>
+
+  <!-- 체크리스트 -->
+  <section>
+    <h2>태음인 자가진단 체크리스트</h2>
+    <p style="margin-bottom:16px; color:#666;">아래 20가지 항목을 읽고, 해당하는 항목에 체크해보세요.</p>
+
+    <div class="checklist-group">
+      <h3>🏃 신체·외모</h3>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>체격이 크거나 골격이 굵은 편이다</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>살이 잘 찌고, 한번 찐 살은 잘 빠지지 않는다</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>땀을 많이 흘리는 편이다 (특히 운동할 때, 식사할 때)</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>피부가 두껍고 거친 편이며 모공이 넓다</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>손발이 따뜻하거나 더운 편이다</label></div>
+    </div>
+
+    <div class="checklist-group">
+      <h3>💭 성격·기질</h3>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>한번 결심한 일은 끝까지 밀어붙이는 추진력이 강하다</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>감정을 잘 드러내지 않고 속으로 삭이는 편이다</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>새로운 것보다 익숙하고 안정적인 것을 좋아한다</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>욕심이 있고, 무언가를 모으거나 저축하는 것을 즐긴다</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>한번 화가 나면 오래 마음에 담아두는 편이다</label></div>
+    </div>
+
+    <div class="checklist-group">
+      <h3>🍚 음식·소화</h3>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>식욕이 왕성하고 먹는 양이 많은 편이다</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>밀가루 음식, 고기류를 좋아하고 잘 소화시킨다</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>변비가 생기기 쉽고 장이 예민하지 않은 편이다</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>음식 종류를 가리지 않고 대부분 잘 먹는다</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>과식을 해도 금방 소화되는 편이다</label></div>
+    </div>
+
+    <div class="checklist-group">
+      <h3>💪 건강·체력</h3>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>평소 체력이 좋고 지구력이 강하다</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>심폐기능이 약한 편이며 숨이 자주 차다 (태음인 약점)</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>피로가 누적될수록 기침·가래·코막힘이 생기기 쉽다</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>피부 트러블(두드러기, 아토피)이 반복되는 편이다</label></div>
+      <div class="check-item" onclick="toggle(this)"><input type="checkbox" /><label>관절이나 근육이 굵고 단단하지만 유연성은 부족하다</label></div>
+    </div>
+  </section>
+
+  <!-- 결과 -->
+  <section>
+    <h2>결과 확인</h2>
+    <div class="result-box high">
+      <div class="result-label">✅ 15개 이상 해당 → 태음인 가능성 매우 높음</div>
+      <p>거의 확실하게 태음인 체질입니다. 아래 태음인 관리법을 꼼꼼히 읽어보세요. 한의원 방문 시 "태음인 체질로 진료받고 싶다"고 말씀하시면 더 정확한 진단을 받을 수 있어요.</p>
+    </div>
+    <div class="result-box mid">
+      <div class="result-label">🟡 10~14개 해당 → 태음인 성향 강함</div>
+      <p>태음인 성향이 강하지만, 일부 소양인·소음인 특성이 섞여 있을 수 있습니다. 전문 한의사 진단으로 정확한 체질을 확인해보시길 추천합니다.</p>
+    </div>
+    <div class="result-box low">
+      <div class="result-label">🔴 9개 이하 해당 → 다른 체질 가능성</div>
+      <p>태음인보다는 소양인이나 소음인일 가능성이 높습니다. 다른 체질 체크리스트도 확인해보세요.</p>
+    </div>
+  </section>
+
+  <!-- 건강 약점 -->
+  <section>
+    <h2>태음인의 건강 약점과 관리 포인트</h2>
+    <div class="card">
+      <p>태음인은 체력과 지구력이 좋은 반면, <strong>호흡기와 피부</strong>가 가장 취약한 부위입니다.</p>
+      <h3>잘 걸리는 질환</h3>
+      <p>고혈압·고지혈증·비만, 기관지염·폐 관련 질환·천식, 아토피·두드러기 등 피부 질환, 변비</p>
+      <h3>특히 주의해야 할 생활 습관</h3>
+      <p>과식과 폭식을 반드시 피해야 합니다. 땀을 규칙적으로 흘리는 운동이 매우 중요하며, 적극적인 사회 활동도 건강에 도움이 됩니다.</p>
+    </div>
+  </section>
+
+  <!-- 한약 -->
+  <section>
+    <h2>태음인에게 맞는 한약</h2>
+    <table>
+      <thead>
+        <tr><th>처방명</th><th>주요 효능</th><th>적합한 증상</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>태음조위탕</td><td>소화·순환 개선</td><td>비만, 과식, 피로</td></tr>
+        <tr><td>열다한소탕</td><td>호흡기 강화</td><td>기침, 가래, 기관지 약화</td></tr>
+        <tr><td>청폐사간탕</td><td>폐열 해소</td><td>피부 트러블, 열감</td></tr>
+        <tr><td>조위승청탕</td><td>위장 조절</td><td>변비, 소화불량</td></tr>
+      </tbody>
+    </table>
+    <div class="notice">⚠️ 위 처방은 참고용입니다. 실제 복용은 반드시 한의사 진단 후 개인 상태에 맞게 조정받으세요.</div>
+
+    <h3 style="margin-top:24px;">태음인에게 좋은 한약재</h3>
+    <div class="herb-list">
+      <span class="herb-tag">율무 — 노폐물 제거</span>
+      <span class="herb-tag">연자육 — 심장 안정</span>
+      <span class="herb-tag">오미자 — 폐 기능 강화</span>
+      <span class="herb-tag">칡(갈근) — 혈액순환</span>
+      <span class="herb-tag">도라지(길경) — 가래 제거</span>
+    </div>
+  </section>
+
+  <!-- 음식 -->
+  <section>
+    <h2>태음인이 먹으면 좋은 음식 vs 피해야 할 음식</h2>
+    <div class="food-grid">
+      <div class="food-good">
+        <h3>✅ 잘 맞는 음식</h3>
+        <p>콩류(두부·된장·청국장), 율무, 견과류, 소고기, 배, 밤, 은행, 잣, 무, 도라지, 연근, 미역, 다시마</p>
+      </div>
+      <div class="food-bad">
+        <h3>❌ 피하면 좋은 음식</h3>
+        <p>닭고기(과다 섭취), 인삼(열이 많은 태음인에게 부작용 가능), 자극적이고 기름진 음식, 밀가루 과다 섭취</p>
+      </div>
+    </div>
+    <div class="notice">💊 <strong>많이 묻는 질문:</strong> 태음인은 홍삼 먹으면 안 되나요?<br>냉한 태음인은 홍삼이 맞을 수 있지만, 열이 많은 태음인은 두통·얼굴 홍조 등 부작용이 나타날 수 있어요. 반드시 한의사와 상담 후 복용하세요.</div>
+  </section>
+
+  <!-- 다이어트 -->
+  <section>
+    <h2>태음인 다이어트, 한방으로 접근하는 법</h2>
+    <div class="card">
+      <p>태음인은 사상체질 중 비만이 가장 많은 체질입니다. 살이 잘 찌는 이유는 게으름이 아니라 <strong>체질적으로 에너지를 저장하는 성질</strong>이 강하기 때문이에요.</p>
+      <p><strong>첫째,</strong> 땀을 내는 운동이 필수입니다. 걷기·수영·자전거 등 유산소 운동을 꾸준히 하면서 땀을 내는 것이 가장 중요합니다.</p>
+      <p><strong>둘째,</strong> 폭식·과식 차단입니다. 태음조위탕 계열 한약은 과식 충동을 줄이고 포만감을 높이는 데 도움이 돼요.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2>자주 묻는 질문 (FAQ)</h2>
+    <div class="faq-item">
+      <div class="faq-q">Q. 체질은 평생 변하지 않나요?</div>
+      <div class="faq-a">사상체질은 태어날 때부터 정해진 고유한 체질로, 기본적으로 평생 변하지 않습니다. 다만 나이·생활습관·환경에 따라 체질 특성이 강해지거나 약해질 수는 있어요.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q. 태음인인데 소양인 증상도 있어요. 왜 그런가요?</div>
+      <div class="faq-a">순수하게 한 체질만 나타나는 경우는 드물어요. 두 체질의 경계에 있는 분들도 많고, 스트레스나 건강 상태에 따라 다른 체질 증상이 나타나기도 합니다.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Q. 온라인 체질 검사 결과를 믿어도 될까요?</div>
+      <div class="faq-a">체질 자가진단은 참고용으로만 활용하세요. 실제 한약 처방은 반드시 한의사의 전문 진단을 거쳐야 합니다. 같은 태음인이라도 개인마다 다른 처방이 필요해요.</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>이 글은 정보 제공 목적으로 작성되었으며, 의료적 진단·처방을 대체하지 않습니다. 실제 한약 복용은 반드시 한의사와 상담하세요.</p>
+  <p style="margin-top:8px;">© 2026 체질별 한약 가이드 블로그</p>
+</footer>
+
+<script>
+  function toggle(el) {
+    const cb = el.querySelector('input[type="checkbox"]');
+    cb.checked = !cb.checked;
+    el.classList.toggle('checked', cb.checked);
+    updateCount();
+  }
+  function updateCount() {
+    const count = document.querySelectorAll('.check-item input:checked').length;
+    document.getElementById('count').textContent = count;
+    const bar = document.getElementById('counterBar');
+    if (count >= 15) bar.style.background = '#2d5a3d';
+    else if (count >= 10) bar.style.background = '#f57f17';
+    else bar.style.background = '#555';
+  }
+</script>
+
+</body>
+</html>
